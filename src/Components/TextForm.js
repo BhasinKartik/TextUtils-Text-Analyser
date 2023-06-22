@@ -39,13 +39,13 @@ setText(newText.join(" "));
     <div className='container' style={{color:props.mode==='dark'?'white':'black'}}>
       <h1>{props.heading}</h1>
 <div class="mb-3">
-  <textarea className="form-control"style={{color:props.mode==='dark'?'white':'black',backgroundColor:props.mode==='dark'?'black':'white'}} value={text} onChange={handleOnChange} id="myBox" rows="8"></textarea>
+  <textarea className="form-control mx-2 my-2"style={{color:props.mode==='dark'?'white':'black',backgroundColor:props.mode==='dark'?'black':'white'}} value={text} onChange={handleOnChange} id="myBox" rows="8"></textarea>
 </div>
-<button className="btn btn-primary mx-2" onClick={handleUpClick} >Convert to UpperCase</button>
-<button className="btn btn-primary mx-2" onClick={handleLowClick} >Convert to LowerCase</button>
-<button className="btn btn-primary mx-2" onClick={clearText} >Clear Text</button>
-<button className="btn btn-primary mx-2" onClick={copyText} >Copy Text</button>
-<button className="btn btn-primary mx-2" onClick={handleExtraSpaces} >Remove extra paces</button>
+<button className="btn btn-primary" onClick={handleUpClick} >Convert to UpperCase</button>
+<button className="btn btn-primary" onClick={clearText} >Clear Text</button>
+<button className="btn btn-primary" onClick={handleLowClick} >Convert to LowerCase</button>
+<button className="btn btn-primary" onClick={handleExtraSpaces} >Remove extra paces</button>
+<button className="btn btn-primary" onClick={copyText} >Copy Text</button>
     </div>
     <div className="cntainer my-2 " style={{color:props.mode==='dark'?'white':'black'}}>
 <h1>Text Summary</h1>

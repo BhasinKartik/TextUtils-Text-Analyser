@@ -18,7 +18,7 @@ if(mode==='dark'){
 }
 else{
   setMode('dark');
-  document.body.style.backgroundColor='black';
+  document.body.style.backgroundColor='#2f2a4b';
 EDswitch('LightMode');
 }
   }
