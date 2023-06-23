@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Navbar from './Components/Navbar';
 import TextForm from './Components/TextForm';
@@ -35,23 +35,18 @@ else{
   document.body.style.backgroundColor='#2f2a4b';
 EDswitch('LightMode');
 showAlert("Dark Mode Enabled","success");
-
 }
-  }
+}
 
   return (
-   
   <>
   <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} switchED={switchED}/>
     <Alert alert={alert}/>
-<div className="container" >
+<div className="container">
 <TextForm heading="Enter Text Here" mode={mode} toggleMode={toggleMode}/>
 <About/>
 </div>
-
   </>
-  
   );
-
   }
 export default App;
